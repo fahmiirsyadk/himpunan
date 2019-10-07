@@ -1,0 +1,8 @@
+{
+  "name": "himpunan",
+  "version": "1.0.0",
+  "description": "tiny lib for array relation",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Fahmi Irsyad Khairi"
+}
