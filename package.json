@@ -4,5 +4,6 @@
   "description": "tiny lib for array relation",
   "main": "index.js",
   "license": "MIT",
-  "author": "Fahmi Irsyad Khairi"
+  "author": "Fahmi Irsyad Khairi",
+  "homepage": "https://github.com/fahmiirsyadk/himpunan"
 }
