@@ -29,7 +29,7 @@ const k = [0, 1, 2, 3];
 const l = [3, 4, 5];
   
 // s - (k u l)
-console.log(complement(s, union(k, l)));
+console.log(complement(s, union(k, l))); // [6,7]
 ```
 
 
@@ -42,10 +42,10 @@ Returns an `array` union of sets
   const c = [2, 3, "a", "b", "c"];
   
   // (a u b)
-  console.log(union(a, b));
+  console.log(union(a, b)); // [1, 2, 3, 4, 5, 6, 7, 8]
   
   // (a u b) u c
-  console.log(union(union(a, b), c));
+  console.log(union(union(a, b), c)); // [1, 2, 3, 4, 5, 6, 7, 8, 'a', 'b', 'c']
 ```
 
 ### intsec(arrA, arrB)
@@ -56,7 +56,7 @@ Returns an `array` intersection of sets
   const c = [2, 3, 7, 8];
   
   // (a n b) n c
-  console.log(intsec(intsec(a, b), c));
+  console.log(intsec(intsec(a, b), c)); // [2,8]
 ```
 
 ### complement(arrSpace, arrEvent)
@@ -67,6 +67,6 @@ Returns an `array` complement of sets
   const l = [3, 4, 5];
   
   // s - (k u l)
-  console.log(complement(s, union(k, l)));
+  console.log(complement(s, union(k, l))); [6,7]
 ```
 
