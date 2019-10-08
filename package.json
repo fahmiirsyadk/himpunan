@@ -1,9 +1,19 @@
 {
   "name": "himpunan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "tiny lib for array relation",
-  "main": "index.js",
   "license": "MIT",
   "author": "Fahmi Irsyad Khairi",
-  "homepage": "https://github.com/fahmiirsyadk/himpunan"
+  "homepage": "https://github.com/fahmiirsyadk/himpunan",
+  "source": "src/index.js",
+  "main": "dist/foo.js",
+  "module": "dist/foo.mjs",
+  "unpkg": "dist/foo.umd.js",
+  "scripts": {
+    "build": "microbundle --raw",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
 }
