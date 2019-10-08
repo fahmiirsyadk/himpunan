@@ -59,7 +59,7 @@ Returns an `array` intersection of sets
   console.log(intsec(intsec(a, b), c));
 ```
 
-### complement(arrA, arrB)
+### complement(arrSpace, arrEvent)
 Returns an `array` complement of sets
 ```js
   const s = [0, 1, 2, 3, 4, 5, 6, 7];
