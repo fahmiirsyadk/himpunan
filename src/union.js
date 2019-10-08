@@ -1,5 +1,6 @@
-export function union(arrA, arrB) {
-  return [...arrA, ...arrB].filter((item, index) => {
-    return [...arrA, ...arrB].indexOf(item) === index;
-  });
-}
+import curry from "./curry";
+
+export const union = curry((arrA, arrB) => {
+  const _ = [...arrA, ...arrB];
+  return _.filter((item, index) => _.indexOf(item) === index);
+});

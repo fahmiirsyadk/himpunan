@@ -1,5 +1,6 @@
+import curry from "./curry";
 import { union } from "./union";
 
-export function complement(s, arr) {
-  return union(s, arr).filter(x => !arr.includes(x));
-}
+export const complement = curry((s, arr) =>
+  union(s, arr).filter(x => !arr.includes(x))
+);

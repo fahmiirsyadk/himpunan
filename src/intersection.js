@@ -1,3 +1,3 @@
-export function intsec(arrA, arrB) {
-  return arrA.filter(x => arrB.includes(x));
-}
+import curry from "./curry";
+
+export const intsec = curry((arrA, arrB) => arrA.filter(x => arrB.includes(x)));
