@@ -1,3 +1,4 @@
 export { union } from "./union";
-export { intsec } from "./intersection";
+export { intersection } from "./intersection";
 export { complement } from "./complement";
+export { diff } from "./diff";
