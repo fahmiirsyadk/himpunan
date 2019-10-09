@@ -2,12 +2,14 @@
 ![npm_min](https://badgen.net/bundlephobia/min/himpunan)
 ![npm version](https://badgen.net/npm/v/himpunan)
 
-javascript library untuk kalkulasi himpunan
+javascript library for solving set operations
 
 ## Features
+- curried by default
 - **union** of sets
 - **intersection** of sets
 - **complement** of sets
+- **symmetric difference** of sets
 
 ## Install
 ```bash
@@ -48,7 +50,7 @@ Returns an `array` union of sets
   console.log(union(union(a, b), c)); // [1, 2, 3, 4, 5, 6, 7, 8, 'a', 'b', 'c']
 ```
 
-### intsec(arrA, arrB)
+### intersection(arrA, arrB)
 Returns an `array` intersection of sets
 ```js
   const a = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -56,7 +58,7 @@ Returns an `array` intersection of sets
   const c = [2, 3, 7, 8];
   
   // (a n b) n c
-  console.log(intsec(intsec(a, b), c)); // [2,8]
+  console.log(intersection(intersection(a, b), c)); // [2,8]
 ```
 
 ### complement(arrSpace, arrEvent)
@@ -70,3 +72,15 @@ Returns an `array` complement of sets
   console.log(complement(s, union(k, l))); [6,7]
 ```
 
+### diff(arrA, arrB)
+Return an `array` symmetric difference (diff) of sets
+```js
+const s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "a", "b"];
+const a = [1, 2, 3, 4, 5];
+const b = [2, 3, 5, 6, "a"];
+
+// can curry
+const resDiff = diff(a);
+
+console.log(complement(s, resDiff(b))); // [2, 3, 5,  7, 8, 9, 10, 'b']
+```
